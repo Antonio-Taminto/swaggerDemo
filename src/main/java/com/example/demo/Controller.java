@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/v1")
 public class Controller {
-        @GetMapping("/richiedinome")
+    @GetMapping("/richiedinome")
     public String richiediNome(@RequestParam String nome){
         return "il nome è : " + nome;
     }
